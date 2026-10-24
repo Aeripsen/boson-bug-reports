@@ -53,6 +53,7 @@ code). A "No user input" error we saw in the app did not reproduce in isolation.
 
 [`notes/how-it-works.md`](notes/how-it-works.md) explains the mechanics behind each finding: VAD, turns, items,
 the response lifecycle, and where we think each bug lives on the server.
+[`notes/workarounds.md`](notes/workarounds.md) lists what our client does about each one until the server is fixed.
 
 ## Reproducing
 
