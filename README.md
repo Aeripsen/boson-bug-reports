@@ -46,10 +46,11 @@ thing. The controls changed two of our conclusions:
   any rejected update was ignored too, once the model had already answered twice. That is the model sticking to its
   own earlier answers, not the protocol, so we left it out.
 
-We also checked each claim against the docs as they read that morning, and dropped two that the docs already cover:
-the server always replies after each user turn (documented: `create_response` and `interrupt_response` "are accepted
-but have no effect"), and the default VAD threshold (0.85 everywhere; the 0.55 we had was a wrong comment in our own
-code). A "No user input" error we saw in the app did not reproduce in isolation.
+We also checked each claim against the docs as they read that morning. The default VAD threshold is 0.85 everywhere
+in the docs; the 0.55 we had was a wrong comment in our own code. The docs say `create_response` "is accepted but has
+no effect", so we first took the automatic reply as fixed; Javad later found that `create_response: false` does stop
+it ([#29](https://github.com/boson-ai/Boson-Feedback-Collection/issues/29)). A "No user input" error we saw in the
+app did not reproduce in isolation.
 
 [`notes/how-it-works.md`](notes/how-it-works.md) explains the mechanics behind each finding: VAD, turns, items,
 the response lifecycle, and where we think each bug lives on the server.

@@ -26,7 +26,9 @@ same turn. That is a design choice, and finding 03 is what happens when it is do
 
 ## 2. Every turn gets an automatic response
 
-Under `server_vad` the server answers every committed turn by itself. It creates a **response** (`response.created`
+Under `server_vad` the server answers every committed turn by itself, unless the session sets
+`turn_detection.create_response: false`. The docs say that field has no effect, but it does stop the automatic reply
+([#29](https://github.com/boson-ai/Boson-Feedback-Collection/issues/29)). It creates a **response** (`response.created`
 with a `response_id`), streams audio (`response.output_audio.delta`) and a transcript of what it says, and ends with
 `response.done`, whose `status` is `completed` or `cancelled`. The reference promises `response.done` is
 "emitted exactly once per `response_id`".
