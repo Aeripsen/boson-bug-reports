@@ -61,6 +61,6 @@ Node 22 or later, no dependencies, a Boson API key in a file outside the repo. S
 Each scenario is 20 to 40 seconds of realtime audio. [`evidence/README.md`](evidence/README.md) maps every log to the
 finding it supports.
 
-This repo was created on 2026-10-24 at 09:20 EDT (GitHub's `created_at`). All runs were on 2026-10-24 between 08:43 and 09:24 EDT against `wss://api.boson.ai/v1/realtime?model=higgs-realtime`,
+All five reports were first pushed on 2026-10-24 at 09:20 EDT, before any issue was filed in Boson's repo. GitHub keeps the record: the [push log](https://github.com/Aeripsen/boson-bug-reports/activity) and that first commit, [`d0fc4f8`](https://github.com/Aeripsen/boson-bug-reports/commit/d0fc4f8). All runs were on 2026-10-24 between 08:43 and 09:24 EDT against `wss://api.boson.ai/v1/realtime?model=higgs-realtime`,
 with `server_vad` defaults, `higgs-stt-3.1` transcription and PCM16 at 24 kHz. Docs quoted are from
 https://docs.boson.ai as served that morning; they had not changed by 09:23.
