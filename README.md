@@ -11,11 +11,11 @@ By Sepehr Jafari ([@Aeripsen](https://github.com/Aeripsen)) and Javad Maheronnag
 
 | # | Finding | Severity | Upstream |
 |---|---|---|---|
-| 01 | [`response.cancel` before output is ignored, and the next user turn is merged into the cancelled one](reports/01-cancel-before-output-merges-next-turn.md) | Major | Overlaps [#11](https://github.com/boson-ai/Boson-Feedback-Collection/issues/11) (another team); our logs add the merged next turn |
-| 02 | [A response ended before its first audio never gets `response.done`](reports/02-no-response-done-before-output.md) | Major | Overlaps [#11](https://github.com/boson-ai/Boson-Feedback-Collection/issues/11) |
-| 03 | [A short pause re-opens a committed turn: same item and response ids twice, two "final" transcripts](reports/03-short-pause-reopens-turn.md) | Major | Not yet reported |
-| 04 | [A `session.update` that changes `turn_detection` is rejected whole, and two doc pages disagree on what happens](reports/04-session-update-turn-detection.md) | Major | Docs side filed as [#4](https://github.com/boson-ai/Boson-Feedback-Collection/issues/4) |
-| 05 | [The errors reference lists none of the Realtime error codes](reports/05-errors-page-missing-realtime-codes.md) | Minor | Not yet reported |
+| 01 | [`response.cancel` before output is ignored, and the next user turn is merged into the cancelled one](reports/01-cancel-before-output-merges-next-turn.md) | Major | Evidence added to [#11](https://github.com/boson-ai/Boson-Feedback-Collection/issues/11#issuecomment-6388070745) (merged next turn) |
+| 02 | [A response ended before its first audio never gets `response.done`](reports/02-no-response-done-before-output.md) | Major | Evidence added to [#11](https://github.com/boson-ai/Boson-Feedback-Collection/issues/11#issuecomment-6388070745) (overlapping `response.create` case) |
+| 03 | [A short pause re-opens a committed turn: same item and response ids twice, two "final" transcripts](reports/03-short-pause-reopens-turn.md) | Major | Filed: [#27](https://github.com/boson-ai/Boson-Feedback-Collection/issues/27) |
+| 04 | [A `session.update` that changes `turn_detection` is rejected whole, and two doc pages disagree on what happens](reports/04-session-update-turn-detection.md) | Major | Filed: [#4](https://github.com/boson-ai/Boson-Feedback-Collection/issues/4), live evidence in [this comment](https://github.com/boson-ai/Boson-Feedback-Collection/issues/4#issuecomment-6388070964) |
+| 05 | [The errors reference lists none of the Realtime error codes](reports/05-errors-page-missing-realtime-codes.md) | Minor | Filed: [#28](https://github.com/boson-ai/Boson-Feedback-Collection/issues/28) |
 
 We also filed four requests that came out of the same work:
 [#5](https://github.com/boson-ai/Boson-Feedback-Collection/issues/5) (how an automatic reply consumes text added during its turn),
@@ -61,6 +61,6 @@ Node 22 or later, no dependencies, a Boson API key in a file outside the repo. S
 Each scenario is 20 to 40 seconds of realtime audio. [`evidence/README.md`](evidence/README.md) maps every log to the
 finding it supports.
 
-All runs were on 2026-10-24 between 08:43 and 09:24 EDT against `wss://api.boson.ai/v1/realtime?model=higgs-realtime`,
+This repo was created on 2026-10-24 at 09:20 EDT (GitHub's `created_at`). All runs were on 2026-10-24 between 08:43 and 09:24 EDT against `wss://api.boson.ai/v1/realtime?model=higgs-realtime`,
 with `server_vad` defaults, `higgs-stt-3.1` transcription and PCM16 at 24 kHz. Docs quoted are from
 https://docs.boson.ai as served that morning; they had not changed by 09:23.
