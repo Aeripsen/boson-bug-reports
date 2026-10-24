@@ -1,0 +1,92 @@
+{
+  "scenario": "b2-turn-detection-update",
+  "started": "2026-10-24T08:43:46.095-04:00",
+  "ws_url": "wss://api.boson.ai/v1/realtime?model=higgs-realtime",
+  "client_secret_headers": {},
+  "ended": "2026-10-24T08:43:50.937-04:00",
+  "close": {
+    "code": 1000,
+    "reason": "",
+    "t_ms": 4792,
+    "at": "2026-10-24T08:43:50.649-04:00"
+  },
+  "session_id": "d15d19d6",
+  "responses": {
+    "d15d_resp_2": {
+      "created": 1,
+      "done": 1,
+      "statuses": [
+        "completed"
+      ],
+      "audio_s": 0.8,
+      "transcript": "APPLE",
+      "first_t_ms": 456
+    },
+    "d15d_resp_4": {
+      "created": 1,
+      "done": 1,
+      "statuses": [
+        "completed"
+      ],
+      "audio_s": 0.9,
+      "transcript": "APPLE",
+      "first_t_ms": 3941
+    },
+    "d15d_resp_6": {
+      "created": 1,
+      "done": 1,
+      "statuses": [
+        "completed"
+      ],
+      "audio_s": 0.8,
+      "transcript": "APPLE",
+      "first_t_ms": 4365
+    }
+  },
+  "response_ids_created_more_than_once": [],
+  "response_ids_done_more_than_once": [],
+  "transcription_completed_per_item": {},
+  "items_with_several_completed": [],
+  "errors": [
+    {
+      "t_ms": 909,
+      "at": "2026-10-24T08:43:46.766-04:00",
+      "event_id": "978e2b0a-9fa0-4ebe-a811-683297d57e35",
+      "error": {
+        "type": "invalid_request_error",
+        "code": "400",
+        "message": "turn_detection cannot be changed after session start",
+        "param": null,
+        "event_id": "8931f02a-15a1-4d10-99ae-06d7aadc9003"
+      }
+    }
+  ],
+  "update_1_ack": "session.created",
+  "update_2_ack": "error",
+  "update_2_error": {
+    "type": "invalid_request_error",
+    "code": "400",
+    "message": "turn_detection cannot be changed after session start",
+    "param": null,
+    "event_id": "8931f02a-15a1-4d10-99ae-06d7aadc9003"
+  },
+  "socket_closed_within_3s_of_update_2": null,
+  "update_3_ack": "session.updated",
+  "answers": [
+    {
+      "label": "after update 1 (APPLE)",
+      "response_id": "d15d_resp_2",
+      "answer": "APPLE"
+    },
+    {
+      "label": "after update 2 (BANANA + turn_detection change)",
+      "response_id": "d15d_resp_4",
+      "answer": "APPLE"
+    },
+    {
+      "label": "after update 3 (CHERRY, no turn_detection)",
+      "response_id": "d15d_resp_6",
+      "answer": "APPLE"
+    }
+  ]
+}

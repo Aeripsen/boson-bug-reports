@@ -1,0 +1,4 @@
+.env
+.env.*
+e2e_logs/
+node_modules/

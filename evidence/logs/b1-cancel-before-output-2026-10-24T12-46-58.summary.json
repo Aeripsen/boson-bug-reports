@@ -1,0 +1,47 @@
+{
+  "scenario": "b1-cancel-before-output",
+  "started": "2026-10-24T08:46:58.416-04:00",
+  "ws_url": "wss://api.boson.ai/v1/realtime?model=higgs-realtime",
+  "client_secret_headers": {},
+  "ended": "2026-10-24T08:47:21.625-04:00",
+  "close": {
+    "code": 1000,
+    "reason": "",
+    "t_ms": 23129,
+    "at": "2026-10-24T08:47:21.338-04:00"
+  },
+  "session_id": "e5ceef0c",
+  "responses": {
+    "e5ce_resp_2": {
+      "created": 2,
+      "done": 1,
+      "statuses": [
+        "completed"
+      ],
+      "audio_s": 3.6,
+      "transcript": "That's a good approach to maintain model performance over time.",
+      "first_t_ms": 6873
+    }
+  },
+  "response_ids_created_more_than_once": [
+    "e5ce_resp_2"
+  ],
+  "response_ids_done_more_than_once": [],
+  "transcription_completed_per_item": {
+    "04ce380d": [
+      {
+        "t_ms": 7100,
+        "transcript": "Precision is the share of predicted positives that are correct."
+      },
+      {
+        "t_ms": 16277,
+        "transcript": "Precision is the share of predicted positives that are correct. Sorry, let me add one thing. I would also retrain the model every week."
+      }
+    ]
+  },
+  "items_with_several_completed": [
+    "04ce380d"
+  ],
+  "errors": [],
+  "cancelled_response_id": "e5ce_resp_2"
+}

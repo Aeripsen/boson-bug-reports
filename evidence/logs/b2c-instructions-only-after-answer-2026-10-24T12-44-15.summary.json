@@ -1,0 +1,51 @@
+{
+  "scenario": "b2c-instructions-only-after-answer",
+  "started": "2026-10-24T08:44:16.000-04:00",
+  "ws_url": "wss://api.boson.ai/v1/realtime?model=higgs-realtime",
+  "client_secret_headers": {},
+  "ended": "2026-10-24T08:44:17.869-04:00",
+  "close": {
+    "code": 1000,
+    "reason": "",
+    "t_ms": 1634,
+    "at": "2026-10-24T08:44:17.590-04:00"
+  },
+  "session_id": "06272f85",
+  "responses": {
+    "0627_resp_2": {
+      "created": 1,
+      "done": 1,
+      "statuses": [
+        "completed"
+      ],
+      "audio_s": 0.8,
+      "transcript": "APPLE",
+      "first_t_ms": 274
+    },
+    "0627_resp_4": {
+      "created": 1,
+      "done": 1,
+      "statuses": [
+        "completed"
+      ],
+      "audio_s": 0.9,
+      "transcript": "BANANA",
+      "first_t_ms": 1207
+    }
+  },
+  "response_ids_created_more_than_once": [],
+  "response_ids_done_more_than_once": [],
+  "transcription_completed_per_item": {},
+  "items_with_several_completed": [],
+  "errors": [],
+  "update_1_ack": "session.created",
+  "update_2_ack": "session.updated",
+  "before": {
+    "response_id": "0627_resp_2",
+    "answer": "APPLE"
+  },
+  "after": {
+    "response_id": "0627_resp_4",
+    "answer": "BANANA"
+  }
+}

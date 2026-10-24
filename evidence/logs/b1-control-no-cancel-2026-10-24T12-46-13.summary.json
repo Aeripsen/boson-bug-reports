@@ -1,0 +1,63 @@
+{
+  "scenario": "b1-control-no-cancel",
+  "started": "2026-10-24T08:46:14.173-04:00",
+  "ws_url": "wss://api.boson.ai/v1/realtime?model=higgs-realtime",
+  "client_secret_headers": {},
+  "ended": "2026-10-24T08:46:40.050-04:00",
+  "close": {
+    "code": 1000,
+    "reason": "",
+    "t_ms": 25810,
+    "at": "2026-10-24T08:46:39.766-04:00"
+  },
+  "session_id": "b30f3817",
+  "responses": {
+    "b30f_resp_2": {
+      "created": 1,
+      "done": 1,
+      "statuses": [
+        "completed"
+      ],
+      "audio_s": 6.4,
+      "transcript": "That's a valid concern, but how would you specifically detect and respond to data drift in real-time?",
+      "first_t_ms": 8211
+    },
+    "b30f_resp_4": {
+      "created": 2,
+      "done": 1,
+      "statuses": [
+        "completed"
+      ],
+      "audio_s": 8.2,
+      "transcript": "Retraining weekly is a good practice, but how do you decide when the model actually needs retraining based on the drift metrics?",
+      "first_t_ms": 14411
+    }
+  },
+  "response_ids_created_more_than_once": [
+    "b30f_resp_4"
+  ],
+  "response_ids_done_more_than_once": [],
+  "transcription_completed_per_item": {
+    "ce028242": [
+      {
+        "t_ms": 8607,
+        "transcript": "I think the main risk in production is data drift, so I would monitor the input distribution."
+      }
+    ],
+    "11d711d7": [
+      {
+        "t_ms": 14643,
+        "transcript": "Sorry. Let me add one thing."
+      },
+      {
+        "t_ms": 18167,
+        "transcript": "Sorry, let me add one thing. I would also retrain the model every week."
+      }
+    ]
+  },
+  "items_with_several_completed": [
+    "11d711d7"
+  ],
+  "errors": [],
+  "cancelled_response_id": null
+}

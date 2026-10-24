@@ -1,0 +1,38 @@
+{
+  "scenario": "b2c-instructions-only-fresh",
+  "started": "2026-10-24T08:44:14.350-04:00",
+  "ws_url": "wss://api.boson.ai/v1/realtime?model=higgs-realtime",
+  "client_secret_headers": {},
+  "ended": "2026-10-24T08:44:15.954-04:00",
+  "close": {
+    "code": 1000,
+    "reason": "",
+    "t_ms": 1537,
+    "at": "2026-10-24T08:44:15.674-04:00"
+  },
+  "session_id": "8c47eb90",
+  "responses": {
+    "8c47_resp_2": {
+      "created": 1,
+      "done": 1,
+      "statuses": [
+        "completed"
+      ],
+      "audio_s": 1.1,
+      "transcript": "BANANA",
+      "first_t_ms": 973
+    }
+  },
+  "response_ids_created_more_than_once": [],
+  "response_ids_done_more_than_once": [],
+  "transcription_completed_per_item": {},
+  "items_with_several_completed": [],
+  "errors": [],
+  "update_1_ack": "session.created",
+  "update_2_ack": "session.updated",
+  "before": null,
+  "after": {
+    "response_id": "8c47_resp_2",
+    "answer": "BANANA"
+  }
+}

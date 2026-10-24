@@ -1,0 +1,70 @@
+{
+  "scenario": "b3-transcription-repeats",
+  "started": "2026-10-24T08:44:56.866-04:00",
+  "ws_url": "wss://api.boson.ai/v1/realtime?model=higgs-realtime",
+  "client_secret_headers": {},
+  "ended": "2026-10-24T08:45:25.458-04:00",
+  "close": {
+    "code": 1000,
+    "reason": "",
+    "t_ms": 28517,
+    "at": "2026-10-24T08:45:25.172-04:00"
+  },
+  "session_id": "ff72f056",
+  "responses": {
+    "ff72_resp_2": {
+      "created": 1,
+      "done": 1,
+      "statuses": [
+        "completed"
+      ],
+      "audio_s": 2.7,
+      "transcript": "Could you please clarify what you're unsure about?",
+      "first_t_ms": 2852
+    },
+    "ff72_resp_4": {
+      "created": 1,
+      "done": 1,
+      "statuses": [
+        "completed"
+      ],
+      "audio_s": 3.2,
+      "transcript": "That sounds like a solid approach to troubleshooting.",
+      "first_t_ms": 12744
+    },
+    "ff72_resp_6": {
+      "created": 1,
+      "done": 1,
+      "statuses": [
+        "completed"
+      ],
+      "audio_s": 5.1,
+      "transcript": "That's correct, precision measures the accuracy of positive predictions.",
+      "first_t_ms": 20594
+    }
+  },
+  "response_ids_created_more_than_once": [],
+  "response_ids_done_more_than_once": [],
+  "transcription_completed_per_item": {
+    "69a77177": [
+      {
+        "t_ms": 3094,
+        "transcript": "I'm not sure."
+      }
+    ],
+    "325ac415": [
+      {
+        "t_ms": 13158,
+        "transcript": "I would start by checking the logs. Then I would look at the metrics dashboard."
+      }
+    ],
+    "cb85eab8": [
+      {
+        "t_ms": 20863,
+        "transcript": "Precision is the share of predicted positives that are correct."
+      }
+    ]
+  },
+  "items_with_several_completed": [],
+  "errors": []
+}

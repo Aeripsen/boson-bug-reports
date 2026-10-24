@@ -1,0 +1,63 @@
+{
+  "scenario": "b1-cancel-before-output",
+  "started": "2026-10-24T08:45:26.174-04:00",
+  "ws_url": "wss://api.boson.ai/v1/realtime?model=higgs-realtime",
+  "client_secret_headers": {},
+  "ended": "2026-10-24T08:45:51.326-04:00",
+  "close": {
+    "code": 1000,
+    "reason": "",
+    "t_ms": 25074,
+    "at": "2026-10-24T08:45:51.038-04:00"
+  },
+  "session_id": "3ee7927f",
+  "responses": {
+    "3ee7_resp_2": {
+      "created": 2,
+      "done": 1,
+      "statuses": [
+        "completed"
+      ],
+      "audio_s": 4.2,
+      "transcript": "That's a solid approach, but how would you handle concept drift?",
+      "first_t_ms": 6122
+    },
+    "3ee7_resp_4": {
+      "created": 1,
+      "done": 1,
+      "statuses": [
+        "completed"
+      ],
+      "audio_s": 6.7,
+      "transcript": "Weekly retraining is a good practice, but how do you decide when to trigger a retraining based on the drift?",
+      "first_t_ms": 17349
+    }
+  },
+  "response_ids_created_more_than_once": [
+    "3ee7_resp_2"
+  ],
+  "response_ids_done_more_than_once": [],
+  "transcription_completed_per_item": {
+    "58cf62cb": [
+      {
+        "t_ms": 6428,
+        "transcript": "I think the main risk in production is data drift."
+      },
+      {
+        "t_ms": 9545,
+        "transcript": "I think the main risk in production is data drift, so I would monitor the input distribution."
+      }
+    ],
+    "4ccb7901": [
+      {
+        "t_ms": 17888,
+        "transcript": "Sorry, let me add one thing. I would also retrain the model every week."
+      }
+    ]
+  },
+  "items_with_several_completed": [
+    "58cf62cb"
+  ],
+  "errors": [],
+  "cancelled_response_id": "3ee7_resp_2"
+}

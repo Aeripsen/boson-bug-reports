@@ -1,0 +1,49 @@
+{
+  "scenario": "b4-no-user-input-d300",
+  "started": "2026-10-24T08:47:48.461-04:00",
+  "ws_url": "wss://api.boson.ai/v1/realtime?model=higgs-realtime",
+  "client_secret_headers": {},
+  "ended": "2026-10-24T08:48:03.359-04:00",
+  "close": {
+    "code": 1000,
+    "reason": "",
+    "t_ms": 14841,
+    "at": "2026-10-24T08:48:03.075-04:00"
+  },
+  "session_id": "fb8d533a",
+  "responses": {
+    "fb8d_resp_2": {
+      "created": 1,
+      "done": 1,
+      "statuses": [
+        "cancelled"
+      ],
+      "audio_s": 0.1,
+      "transcript": "That's a solid approach for minimizing risk during deployment.",
+      "first_t_ms": 7118
+    },
+    "fb8d_resp_4": {
+      "created": 1,
+      "done": 1,
+      "statuses": [
+        "completed"
+      ],
+      "audio_s": 5.1,
+      "transcript": "How would you monitor the model's performance and user feedback during the gradual rollout?",
+      "first_t_ms": 7466
+    }
+  },
+  "response_ids_created_more_than_once": [],
+  "response_ids_done_more_than_once": [],
+  "transcription_completed_per_item": {
+    "98d52fda": [
+      {
+        "t_ms": 7467,
+        "transcript": "I would deploy the model behind a feature flag and roll it out slowly."
+      }
+    ]
+  },
+  "items_with_several_completed": [],
+  "errors": [],
+  "create_delay_after_speech_stopped_ms": 300
+}

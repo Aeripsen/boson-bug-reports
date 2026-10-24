@@ -1,0 +1,47 @@
+{
+  "scenario": "b4-no-user-input-d0",
+  "started": "2026-10-24T09:24:11.491-04:00",
+  "ws_url": "wss://api.boson.ai/v1/realtime?model=higgs-realtime",
+  "client_secret_headers": {},
+  "ended": "2026-10-24T09:24:25.865-04:00",
+  "close": {
+    "code": 1000,
+    "reason": "",
+    "t_ms": 14305,
+    "at": "2026-10-24T09:24:25.580-04:00"
+  },
+  "session_id": "0bf9c49c",
+  "responses": {
+    "0bf9_resp_2": {
+      "created": 1,
+      "done": 0,
+      "statuses": [],
+      "audio_s": 0,
+      "transcript": "",
+      "first_t_ms": 7223
+    },
+    "0bf9_resp_3": {
+      "created": 1,
+      "done": 1,
+      "statuses": [
+        "completed"
+      ],
+      "audio_s": 3.8,
+      "transcript": "How would you monitor the model's performance during the gradual rollout?",
+      "first_t_ms": 7245
+    }
+  },
+  "response_ids_created_more_than_once": [],
+  "response_ids_done_more_than_once": [],
+  "transcription_completed_per_item": {
+    "07a31d70": [
+      {
+        "t_ms": 7580,
+        "transcript": "I would deploy the model behind a feature flag and roll it out slowly."
+      }
+    ]
+  },
+  "items_with_several_completed": [],
+  "errors": [],
+  "create_delay_after_speech_stopped_ms": 0
+}
